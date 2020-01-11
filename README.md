@@ -1,11 +1,7 @@
 ## <center>Welcome to My blog</center>
 ---
 
-<div align=center>
-![Hello](assets/images/profile.png)
-</div>
-
-Hello,I am XuShuai,an undergraduate from China.My major is _Electronic Information Science and Technology_.
+![](assets/images/profile.png)Hello,I am XuShuai,an undergraduate from China.My major is _Electronic Information Science and Technology_.
 I like programming and electronic design.I have studied C,C++,C#,Matlab and python.Of course,for hardware I have studie 
 assembly language and verilog hdl.I like them very much,but I'm not very familiar with anyone of them.I will pay more efferts
 on them.Looking forward to progress with you.
