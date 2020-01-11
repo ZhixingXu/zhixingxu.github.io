@@ -1,5 +1,4 @@
-## <table><tr><td bgcolor=yellow>Welcome to My blog</td></tr></table>
-<center>Welcome to My blog</center>
+## <center>Welcome to My blog</center>
 ---
 
 <div align=center><img src="assets/images/profile.png"></div>
