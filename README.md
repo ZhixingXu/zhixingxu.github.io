@@ -6,7 +6,7 @@ I like programming and electronic design.I have studied C,C++,C#,Matlab and pyth
 assembly language and verilog hdl.I like them very much,but I'm not very familiar with anyone of them.I will pay more efferts
 on them.Looking forward to progress with you.
 
-===
+---
 
 ### [words](word.md)
 The words I met on my way to study
