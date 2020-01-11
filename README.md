@@ -1,7 +1,7 @@
 ## <center>Welcome to My blog</center>
 ---
 
-<center> ![](assets/images/profile.png) </center>
+<div align=center><img src="assets/images/profile.png"></div>
 
 Hello,I am XuShuai,an undergraduate from China.My major is _Electronic Information Science and Technology_.
 I like programming and electronic design.I have studied C,C++,C#,Matlab and python.Of course,for hardware I have studie 
