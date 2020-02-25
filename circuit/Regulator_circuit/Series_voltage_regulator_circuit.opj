@@ -1,0 +1,122 @@
+(ExpressProject "Series_voltage_regulator_circuit"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "C:\Cadence\SPB_17.2\tools\capture\library\pspice\analog.olb"
+        (DisplayName
+           "C:\Cadence\SPB_17.2\tools\capture\library\pspice\analog.olb")
+        (Type "Schematic Library"))
+      (File "C:\Cadence\SPB_17.2\tools\capture\library\pspice\breakout.olb"
+        (DisplayName
+           "C:\Cadence\SPB_17.2\tools\capture\library\pspice\breakout.olb")
+        (Type "Schematic Library"))
+      (File "C:\Cadence\SPB_17.2\tools\capture\library\pspice\source.olb"
+        (DisplayName
+           "C:\Cadence\SPB_17.2\tools\capture\library\pspice\source.olb")
+        (Type "Schematic Library"))
+      (File "C:\Cadence\SPB_17.2\tools\capture\library\pspice\sourcstm.olb"
+        (DisplayName
+           "C:\Cadence\SPB_17.2\tools\capture\library\pspice\sourcstm.olb")
+        (Type "Schematic Library"))
+      (File "C:\Cadence\SPB_17.2\tools\capture\library\pspice\special.olb"
+        (DisplayName
+           "C:\Cadence\SPB_17.2\tools\capture\library\pspice\special.olb")
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "series_voltage_regulator_circuit.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "TRUE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File
+       ".\series_voltage_regulator_circuit-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\series_voltage_regulator_circuit-pspicefiles\schematic1\bias.sim"
+        (DisplayName "SCHEMATIC1-bias")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\series_voltage_regulator_circuit-pspicefiles\schematic1\series.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\series_voltage_regulator_circuit-pspicefiles\schematic1\series.sim"
+        (DisplayName "SCHEMATIC1-series")
+        (Type "PSpice Profile"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (QbreakN
+      (FullPartName "QbreakN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (XFRM_LINEAR
+      (FullPartName "XFRM_LINEAR.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "LIBRARY\PSPICE")
+  (MPSSessionName "28378")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "E:\orcad\Regulator_circuit\series_voltage_regulator_circuit.dsn")
+      (Path "Design Resources"
+         "E:\orcad\Regulator_circuit\series_voltage_regulator_circuit.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "E:\orcad\Regulator_circuit\series_voltage_regulator_circuit.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -9 -36 0 200 0 442"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -9 -36 120 1411 120 607")
+        (Scroll "380 212")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "E:\ORCAD\REGULATOR_CIRCUIT\SERIES_VOLTAGE_REGULATOR_CIRCUIT.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

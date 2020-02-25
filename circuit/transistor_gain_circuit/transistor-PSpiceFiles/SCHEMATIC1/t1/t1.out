@@ -1,0 +1,135 @@
+
+**** 02/22/20 14:05:07 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-t1"  [ E:\orcad\transistor_gain_circuit\transistor-pspicefiles\schematic1\t1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "t1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 8ms 0 1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TRANSISTOR
+Q_Q1         N14478 N14464 N14452 QbreakN 
+R_R1         N14478 N14407  4.7k TC=0,0 
+R_R2         N14464 N14407  20k TC=0,0 
+R_R3         0 N14464  4k TC=0,0 
+V_V1         N14407 0 5
+C_C1         N14538 N14464  10u  TC=0,0 
+R_R4         0 N14658  10k TC=0,0 
+V_V3         N14538 0  AC 1
++SIN 0 20m 2k 0 0 0
+R_R5         0 N14452  1.5k TC=0,0 
+C_C2         0 N14452  100u  TC=0,0 
+C_C3         N14478 N14658  10u  TC=0,0 
+
+**** RESUMING t1.cir ****
+.END
+
+**** 02/22/20 14:05:07 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-t1"  [ E:\orcad\transistor_gain_circuit\transistor-pspicefiles\schematic1\t1.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 02/22/20 14:05:07 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-t1"  [ E:\orcad\transistor_gain_circuit\transistor-pspicefiles\schematic1\t1.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14407)    5.0000 (N14452)     .1217 (N14464)     .8307 (N14478)    4.6225     
+
+(N14538)    0.0000 (N14658)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.888E-04
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.44E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/22/20 14:05:07 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-t1"  [ E:\orcad\transistor_gain_circuit\transistor-pspicefiles\schematic1\t1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .16
+

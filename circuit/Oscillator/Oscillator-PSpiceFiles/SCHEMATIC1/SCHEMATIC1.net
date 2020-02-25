@@ -1,0 +1,16 @@
+* source OSCILLATOR
+R_R1         0 N14764  470 TC=0,0 
+R_R2         N14517 N14525  47k TC=0,0 
+R_R3         0 N14517  6.2k TC=0,0 
+Q_Q1         N14554 N14517 N14764 QbreakN 
+C_C1         N14717 N14517  100u  TC=0,0 
+C_C2         N14554 N14536  100u  TC=0,0 
+Kn_K1         L_L1 L_L2 
++ L_L3    1
+L_L1         N14554 N14536  40mH  
+L_L2         0 N14849  10mH  
+L_L3         0 N14717  10mH IC=20m 
+V_V1         N14525 0 10Vdc
+R_R4         0 N14849  100 TC=0,0 
+C_C3         0 N14764  100u  TC=0,0 
+R_R5         N14536 N14525  1k TC=0,0 

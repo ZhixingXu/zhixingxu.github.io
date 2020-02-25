@@ -1,0 +1,13 @@
+* source TRANSISTOR
+Q_Q1         N14478 N14464 N14452 QbreakN 
+R_R1         N14478 N14407  4.7k TC=0,0 
+R_R2         N14464 N14407  20k TC=0,0 
+R_R3         0 N14464  4k TC=0,0 
+V_V1         N14407 0 5
+C_C1         N14538 N14464  10u  TC=0,0 
+R_R4         0 N14658  10k TC=0,0 
+V_V3         N14538 0  AC 1
++SIN 0 20m 2k 0 0 0
+R_R5         0 N14452  1.5k TC=0,0 
+C_C2         0 N14452  100u  TC=0,0 
+C_C3         N14478 N14658  10u  TC=0,0 

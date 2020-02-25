@@ -1,0 +1,113 @@
+
+**** 02/23/20 20:29:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-time"  [ E:\orcad\Oscillator\Oscillator-PSpiceFiles\SCHEMATIC1\time.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "time.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "E:\orcad\Oscillator\Oscillator-PSpiceFiles\SCHEMATIC1\time\time_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+
+**** INCLUDING time_profile.inc ****
+.STMLIB ".\time.stl" 
+
+**** RESUMING time.cir ****
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 2.5 2.4 0.01m SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source OSCILLATOR
+R_R1         0 N14764  470 TC=0,0 
+R_R2         N14517 N14525  47k TC=0,0 
+R_R3         0 N14517  6.2k TC=0,0 
+Q_Q1         N14554 N14517 N14764 QbreakN 
+C_C1         N14717 N14517  100u  TC=0,0 
+C_C2         N14554 N14536  100u  TC=0,0 
+Kn_K1         L_L1 L_L2 
++ L_L3    1
+L_L1         N14554 N14536  40mH  
+L_L2         0 N14849  10mH  
+L_L3         0 N14717  10mH IC=20m 
+V_V1         N14525 0 10Vdc
+R_R4         0 N14849  100 TC=0,0 
+C_C3         0 N14764  100u  TC=0,0 
+R_R5         N14536 N14525  1k TC=0,0 
+
+**** RESUMING time.cir ****
+.END
+
+**** 02/23/20 20:29:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-time"  [ E:\orcad\Oscillator\Oscillator-PSpiceFiles\SCHEMATIC1\time.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+
+          JOB CONCLUDED
+
+**** 02/23/20 20:29:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-time"  [ E:\orcad\Oscillator\Oscillator-PSpiceFiles\SCHEMATIC1\time.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        2.05
+

@@ -1,0 +1,13 @@
+* source INDUCTANCE_FILTER
+V_V1         N17278 0  AC 1
++SIN 0 380 50 0 0 0
+Kn_K1         L_L1 L_L2     1
+R_R2         N17286 N17278  5 TC=0,0 
+D_D4         0 N17258 D1N4148 
+D_D3         N17438 N17270 D1N4148 
+D_D5         0 N17438 D1N4148 
+R_R1         N17410 0  1k TC=0,0 
+L_L2         N17258 N17438  25uH  
+L_L1         N17286 0  50mH  
+D_D2         N17258 N17270 D1N4148 
+L_L3         N17410 N17270  10H  

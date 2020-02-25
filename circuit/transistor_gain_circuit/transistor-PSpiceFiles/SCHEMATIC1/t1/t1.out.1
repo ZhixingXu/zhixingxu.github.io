@@ -1,0 +1,55 @@
+
+**** 02/13/20 21:16:32 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-t1"  [ E:\orcad\transistor_gain_circuit\transistor-PSpiceFiles\SCHEMATIC1\t1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "t1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TRANSISTOR
+Q_Q1         N14478 N14464 N14440 QbreakN 
+R_R1         N14478 N14407  4.7k TC=0,0 
+R_R2         N14464 N14407  4k TC=0,0 
+R_R3         N14440 N14464  4k TC=0,0 
+V_V1         N14407 N14440 5
+C_C1         N14538 N14464  1u  TC=0,0 
+V_V2         N14538 N14440 DC 0Vdc AC 20m 
+R_R4         N14440 N14478  40 TC=0,0 
+
+**** RESUMING t1.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N14478 is floating
+
+ERROR(ORPSIM-15142): Node N14464 is floating
+
+ERROR(ORPSIM-15142): Node N14440 is floating
+
+ERROR(ORPSIM-15142): Node N14407 is floating
+
+ERROR(ORPSIM-15142): Node N14538 is floating
+

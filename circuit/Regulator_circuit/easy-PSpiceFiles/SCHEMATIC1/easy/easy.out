@@ -1,0 +1,198 @@
+
+**** 02/24/20 21:26:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-easy"  [ E:\orcad\Regulator_circuit\easy-PSpiceFiles\SCHEMATIC1\easy.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "easy.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 200ms 0 0.01m 
+.STEP PARAM amp LIST 300,380,500 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EASY
+L_L1         N18940 0  50mH  
+D_D3         N19148 N18924 D1N4148 
+L_L2         N18912 N19148  25uH  
+C_C1         N18924 0  50u  TC=0,0 
+V_V1         N18932 0  AC 1
++SIN 0 {amp} 50 0 0 0
+R_R1         N19348 0  1k TC=0,0 
+C_C2         N19068 0  100u  TC=0,0 
+D_D4         0 N18912 D1N4148 
+L_L3         N19068 N18924  10uH  
+D_D2         N18912 N18924 D1N4148 
+R_R2         N18940 N18932  5 TC=0,0 
+Kn_K1         L_L1 L_L2     1
+D_D5         0 N19148 D1N4148 
+R_R3         N19068 N19348  100 TC=0,0 
+D_D6         0 N19348 D1N4617 
+.PARAM  amp=380
+
+**** RESUMING easy.cir ****
+.END
+
+**** 02/24/20 21:26:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-easy"  [ E:\orcad\Regulator_circuit\easy-PSpiceFiles\SCHEMATIC1\easy.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         D1N4617         
+          IS    2.682000E-09   77.530000E-18 
+           N    1.836           1.196        
+         ISR    1.565000E-09    1.272400E-06 
+          NR                    2.1594       
+         IKF     .04417                      
+          BV  100               2.5491       
+         IBV  100.000000E-06     .079582     
+          RS     .5664           .01358      
+          TT   11.540000E-09   94.600000E-09 
+         CJO    4.000000E-12  170.000000E-12 
+          VJ     .5              .75         
+           M     .3333           .53348      
+
+
+**** 02/24/20 21:26:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-easy"  [ E:\orcad\Regulator_circuit\easy-PSpiceFiles\SCHEMATIC1\easy.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM AMP =  300   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N18912)-498.5E-18 (N18924)-1.003E-15 (N18932)    0.0000 (N18940)    0.0000     
+
+(N19068)-1.003E-15 (N19148)-498.5E-18 (N19348)-909.8E-18 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 02/24/20 21:26:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-easy"  [ E:\orcad\Regulator_circuit\easy-PSpiceFiles\SCHEMATIC1\easy.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM AMP =  380   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N18912)-498.5E-18 (N18924)-1.003E-15 (N18932)    0.0000 (N18940)    0.0000     
+
+(N19068)-1.003E-15 (N19148)-498.5E-18 (N19348)-909.8E-18 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 02/24/20 21:26:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-easy"  [ E:\orcad\Regulator_circuit\easy-PSpiceFiles\SCHEMATIC1\easy.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM AMP =  500   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N18912)-498.5E-18 (N18924)-1.003E-15 (N18932)    0.0000 (N18940)    0.0000     
+
+(N19068)-1.003E-15 (N19148)-498.5E-18 (N19348)-909.8E-18 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/24/20 21:26:33 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-easy"  [ E:\orcad\Regulator_circuit\easy-PSpiceFiles\SCHEMATIC1\easy.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM AMP =  500   
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.25
+

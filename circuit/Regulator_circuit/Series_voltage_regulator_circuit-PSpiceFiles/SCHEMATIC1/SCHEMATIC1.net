@@ -1,0 +1,20 @@
+* source SERIES_VOLTAGE_REGULATOR_CIRCUIT
+D_D4         0 N19916 D1N4148 
+D_D6         0 N20601 D1N4617 
+L_L1         N19944 0  50mH  
+C_C2         N20088 0  100u  TC=0,0 
+D_D3         N20196 N19928 D1N4148 
+R_R1         N20605 0  10k TC=0,0 
+R_R3         N20601 N20088  100 TC=0,0 
+R_R2         N19944 N19936  5 TC=0,0 
+L_L3         N20088 N19928  10uH  
+C_C1         N19928 0  50u  TC=0,0 
+D_D5         0 N20196 D1N4148 
+V_V1         N19936 0  AC 1
++SIN 0 {amp} 50 0 0 0
+Kn_K1         L_L1 L_L2     1
+L_L2         N19916 N20196  25uH  
+D_D2         N19916 N19928 D1N4148 
+Q_Q1         N20088 N20601 N20605 QbreakN 
+C_C3         0 N20605  10u  TC=0,0 
+.PARAM  amp=380

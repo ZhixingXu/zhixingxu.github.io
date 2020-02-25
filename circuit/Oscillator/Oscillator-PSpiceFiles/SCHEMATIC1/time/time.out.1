@@ -1,0 +1,139 @@
+
+**** 02/23/20 20:09:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-time"  [ E:\orcad\Oscillator\Oscillator-PSpiceFiles\SCHEMATIC1\time.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "time.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "E:\orcad\Oscillator\Oscillator-PSpiceFiles\SCHEMATIC1\time\time_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+
+**** INCLUDING time_profile.inc ****
+.STMLIB ".\time.stl" 
+
+**** RESUMING time.cir ****
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10s 0 SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source OSCILLATOR
+R_R1         0 N14764  470 TC=0,0 
+R_R2         N14517 N14525  47k TC=0,0 
+R_R3         0 N14517  6.2k TC=0,0 
+Q_Q1         N14554 N14517 N14764 QbreakN 
+C_C1         N14717 N14517  100u IC=20m TC=0,0 
+C_C2         N14554 N14525  40u  TC=0,0 
+Kn_K1         L_L1 L_L2 
++ L_L3    1
+L_L1         N14554 N14525  40mH IC=20m 
+L_L2         0 N14849  10uH  
+L_L3         0 N14717  10mH IC=20m 
+V_V1         N14525 0 10Vdc
+R_R4         0 N14849  100 TC=0,0 
+C_C3         0 N14764  100u  TC=0,0 
+
+**** RESUMING time.cir ****
+.END
+
+**** 02/23/20 20:09:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-time"  [ E:\orcad\Oscillator\Oscillator-PSpiceFiles\SCHEMATIC1\time.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  .757.
+         Time step =  184.6E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N14764)                 =     2.206V  \     2.236V
+    V(N14517)                 =    918.25V  \     3.528V
+    V(N14554)                 =     4.704V  \     4.630V
+    V(N14717)                 =    917.41V  \     2.686V
+    V(N14849)                 =   -132.12V  \    84.91mV
+
+  These supply currents failed to converge:
+
+    I(L_L1)                   =    22.19mA  \   -2.399KA
+    I(L_L2)                   =    -1.321A  \   849.09uA
+    I(L_L3)                   =    7.813mA  \    4.799KA
+    I(V_V1)                   =    -48.58A  \  -479.87KA
+
+  These devices failed to converge:
+    Q_Q1      
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14517)  918.2500 (N14525)   10.0000 (N14554)    4.7042 (N14717)  917.4100     
+
+(N14764)    2.2064 (N14849) -132.1200 
+
+
+**** Interrupt ****

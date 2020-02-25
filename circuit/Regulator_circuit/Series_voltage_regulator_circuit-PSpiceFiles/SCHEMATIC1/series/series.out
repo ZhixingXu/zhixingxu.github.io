@@ -1,0 +1,302 @@
+
+**** 02/24/20 22:16:26 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-series"  [ E:\orcad\Regulator_circuit\Series_voltage_regulator_circuit-PSpiceFiles\SCHEMATIC1\series.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "series.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 200ms 0 
+.STEP PARAM amp LIST 100,300,380,500,50000 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SERIES_VOLTAGE_REGULATOR_CIRCUIT
+D_D4         0 N19916 D1N4148 
+D_D6         0 N20601 D1N4617 
+L_L1         N19944 0  50mH  
+C_C2         N20088 0  100u  TC=0,0 
+D_D3         N20196 N19928 D1N4148 
+R_R1         N20605 0  10k TC=0,0 
+R_R3         N20601 N20088  100 TC=0,0 
+R_R2         N19944 N19936  5 TC=0,0 
+L_L3         N20088 N19928  10uH  
+C_C1         N19928 0  50u  TC=0,0 
+D_D5         0 N20196 D1N4148 
+V_V1         N19936 0  AC 1
++SIN 0 {amp} 50 0 0 0
+Kn_K1         L_L1 L_L2     1
+L_L2         N19916 N20196  25uH  
+D_D2         N19916 N19928 D1N4148 
+Q_Q1         N20088 N20601 N20605 QbreakN 
+C_C3         0 N20605  10u  TC=0,0 
+.PARAM  amp=380
+
+**** RESUMING series.cir ****
+.END
+
+**** 02/24/20 22:16:26 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-series"  [ E:\orcad\Regulator_circuit\Series_voltage_regulator_circuit-PSpiceFiles\SCHEMATIC1\series.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         D1N4617         
+          IS    2.682000E-09   77.530000E-18 
+           N    1.836           1.196        
+         ISR    1.565000E-09    1.272400E-06 
+          NR                    2.1594       
+         IKF     .04417                      
+          BV  100               2.5491       
+         IBV  100.000000E-06     .079582     
+          RS     .5664           .01358      
+          TT   11.540000E-09   94.600000E-09 
+         CJO    4.000000E-12  170.000000E-12 
+          VJ     .5              .75         
+           M     .3333           .53348      
+
+
+**** 02/24/20 22:16:26 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-series"  [ E:\orcad\Regulator_circuit\Series_voltage_regulator_circuit-PSpiceFiles\SCHEMATIC1\series.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 02/24/20 22:16:26 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-series"  [ E:\orcad\Regulator_circuit\Series_voltage_regulator_circuit-PSpiceFiles\SCHEMATIC1\series.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM AMP =  100   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N19916)-1.496E-15 (N19928)-2.994E-15 (N19936)    0.0000 (N19944)    0.0000     
+
+(N20088)-2.994E-15 (N20196)-1.496E-15 (N20601)-2.987E-15 (N20605)-149.5E-24 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 02/24/20 22:16:26 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-series"  [ E:\orcad\Regulator_circuit\Series_voltage_regulator_circuit-PSpiceFiles\SCHEMATIC1\series.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM AMP =  300   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N19916)-1.496E-15 (N19928)-2.994E-15 (N19936)    0.0000 (N19944)    0.0000     
+
+(N20088)-2.994E-15 (N20196)-1.496E-15 (N20601)-2.987E-15 (N20605)-149.5E-24 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 02/24/20 22:16:26 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-series"  [ E:\orcad\Regulator_circuit\Series_voltage_regulator_circuit-PSpiceFiles\SCHEMATIC1\series.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM AMP =  380   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N19916)-1.496E-15 (N19928)-2.994E-15 (N19936)    0.0000 (N19944)    0.0000     
+
+(N20088)-2.994E-15 (N20196)-1.496E-15 (N20601)-2.987E-15 (N20605)-149.5E-24 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 02/24/20 22:16:26 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-series"  [ E:\orcad\Regulator_circuit\Series_voltage_regulator_circuit-PSpiceFiles\SCHEMATIC1\series.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM AMP =  500   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N19916)-1.496E-15 (N19928)-2.994E-15 (N19936)    0.0000 (N19944)    0.0000     
+
+(N20088)-2.994E-15 (N20196)-1.496E-15 (N20601)-2.987E-15 (N20605)-149.5E-24 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 02/24/20 22:16:26 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-series"  [ E:\orcad\Regulator_circuit\Series_voltage_regulator_circuit-PSpiceFiles\SCHEMATIC1\series.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM AMP =   50.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N19916)-1.496E-15 (N19928)-2.994E-15 (N19936)    0.0000 (N19944)    0.0000     
+
+(N20088)-2.994E-15 (N20196)-1.496E-15 (N20601)-2.987E-15 (N20605)-149.5E-24 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/24/20 22:16:26 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-series"  [ E:\orcad\Regulator_circuit\Series_voltage_regulator_circuit-PSpiceFiles\SCHEMATIC1\series.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM AMP =   50.0000E+03
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .44
+

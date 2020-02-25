@@ -1,0 +1,13 @@
+* E:\orcad\Oscillator\Oscillator-PSpiceFiles\SCHEMATIC1\time\time.stl written on Sun Feb 23 19:57:25 2020
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! ini Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 60s
+;!Yrange 0 1
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS ini PULSE( 0 1 0 100n 100n 10m 20 )

@@ -1,0 +1,123 @@
+
+**** 02/24/20 15:40:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-cap"  [ E:\orcad\Filter_circuit\Cap_filter-PSpiceFiles\SCHEMATIC1\cap.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "cap.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 200ms 0 0.01m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CAP_FILTER
+D_D3         N17438 N17270 D1N4148 
+D_D4         0 N17258 D1N4148 
+L_L2         N17258 N17438  25uH  
+Kn_K1         L_L1 L_L2     1
+V_V1         N17278 0  AC 1
++SIN 0 380 50 0 0 0
+R_R1         N17270 0  1k TC=0,0 
+D_D5         0 N17438 D1N4148 
+R_R2         N17286 N17278  5 TC=0,0 
+D_D2         N17258 N17270 D1N4148 
+L_L1         N17286 0  50mH  
+C_C1         0 N17270  100u  TC=0,0 
+
+**** RESUMING cap.cir ****
+.END
+
+**** 02/24/20 15:40:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-cap"  [ E:\orcad\Filter_circuit\Cap_filter-PSpiceFiles\SCHEMATIC1\cap.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+**** 02/24/20 15:40:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-cap"  [ E:\orcad\Filter_circuit\Cap_filter-PSpiceFiles\SCHEMATIC1\cap.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N17258)-3.353E-18 (N17270) 152.1E-24 (N17278)    0.0000 (N17286)    0.0000     
+
+(N17438)-3.353E-18 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/24/20 15:40:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-cap"  [ E:\orcad\Filter_circuit\Cap_filter-PSpiceFiles\SCHEMATIC1\cap.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .38
+
