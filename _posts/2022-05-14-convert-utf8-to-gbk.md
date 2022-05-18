@@ -17,7 +17,7 @@ iconv_t iconv_open(const char *tocode, const char *fromcode);
 size_t iconv(iconv_t cd, char **inbuf, size_t *inbytesleft, char **outbuf, size_t *outbytesleft);
 int iconv_close(iconv_t cd);
 ```
-其中需要注意的是`iconv`函数会修改指针**inbuf 和指针outbuf的值**。因此需要保存原输入、输出内存分配的地址值。大致的调用如下:
+其中需要注意的是`iconv`函数会修改**指针inbuf 和指针outbuf的值**。因此需要保存原输入、输出内存分配的地址值。大致的调用如下:
 ```c
 //pin,pout均为char*类型,为指向输入输出空间的指针
 iconv_t cd;
