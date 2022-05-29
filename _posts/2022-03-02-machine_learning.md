@@ -4,6 +4,7 @@ title:  "机器学习"
 author: shuai
 categories: [ shuai, tutorial ]
 image: assets/images/18.jpg
+hidden: true
 ---
 
 这是测试
