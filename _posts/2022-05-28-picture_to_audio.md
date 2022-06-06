@@ -50,18 +50,25 @@ tar_w=int(origin_width/ratio)
 
 data=cv2.resize(data,dsize=(tar_w,tar_h),fx=1,fy=1,interpolation=cv2.INTER_LINEAR)
 ```
-接着，把图片从彩色图片转为灰度图片，然后调整每一个像素的值，以使得最终的声谱图具有区分度(我并没有找到一个很好的调整方法，下面的像素调整可自行修改)。
+接着，把图片从彩色图片转为灰度图片，然后调整每一个像素的值，以使得最终的声谱图具有区分度。我的调整方法是先把0~255的灰度转到-128~127，然后对其做指数运算`1.1**np.abs(pic_data)/100`，使得每一个灰度相差一个很大的值，之后再做适当的线性放缩。对应的程序如下图所示：
 ```python
 # 用对rgb通道求平均值的方法转为灰度值
 data=np.mean(data,axis=2)
-# 调整每一个像素的值，采样宽度是16位的，所以最终的每个音频数据在-0x7fff~0x7fff之间。
-data=256-data
-data=data-128
-data[data<0]=data[data<0]-20
-data[data>=0]=data[data>=0]+20
 
-data=data**5
-data=data/(np.max(data)/0x7fff)
+pic_data=pic_data-128
+
+ratio=128/np.max(pic_data)
+pic_data=ratio*pic_data
+index=pic_data<0
+pic_data=1.1**np.abs(pic_data)/100
+if np.max(pic_data)>0x4fff:
+    ratio=np.max(pic_data)/0x4fff
+    pic_data=pic_data/ratio
+pic_data[index]=-pic_data[index]
+pic_data=pic_data*pic_data.shape[0]
+pic_data=pic_data[::-1,:]
+
+pic_data=np.r_[pic_data,pic_data[-2:0:-1,:]]
 ```
 接下来构建另一半的幅频响应：
 ```python
@@ -92,6 +99,14 @@ au.audio_export(audio,'target.wav')
 ```
 
 over~
+
+我用pyqt5实现一个带gui的程序，[点此链接查看](https://github.com/Shuai-xv/img2audio.git)
+
+敬请欣赏更多转换后的音频：
+
+![picture 4](../assets/images/1654485249727.png)  
+
+![picture 5](../assets/images/1654485263792.png)  
 
 ---
 
