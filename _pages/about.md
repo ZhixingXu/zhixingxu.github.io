@@ -8,7 +8,7 @@ comments: true
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>Hi,I am xushuai,I graduated with a bachelor's degree in 2021,and my major is Electronic Information Science and Technology.Now I'm working as an audio algorithm engineer at a company and I really want to develop in this profession for the long term.I am glad to share some technologies and experience that I have learnd with you.</p>
+<p>Hi,I am xushuai,I graduated with a bachelor's degree in 2021,and my major is Electronic Information Science and Technology.Now I'm working as an audio algorithm engineer at a company and I do want to develop in this profession for the long term.I am glad to share some technologies and experience that I have learnd with you.</p>
 
 <p>If you have some questions,you can email to me:xv-shuai@foxmail.com</p>
 
