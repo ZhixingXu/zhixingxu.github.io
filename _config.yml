@@ -1,7 +1,7 @@
 # Site
-name: "华月夜"
-title: "Hua Yueye"
-description: "我自飘零我自狂，犹如野鹤游四方"
+name: "徐知行"
+title: "xuzx"
+description: "路漫漫其修远兮,吾将上下而求索"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
@@ -16,7 +16,7 @@ permalink: /:title/
 authors:
   shuai:
     name: shuai
-    display_name: 华月夜
+    display_name: 徐知行
     gravatar: eecc5347d489852f760c120cb1f3afb0
     email: 2087713004@qq.com
     web: https://shuai-xv.github.io

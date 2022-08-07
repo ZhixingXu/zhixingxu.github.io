@@ -3,7 +3,7 @@ layout: post
 title:  "图片转音频"
 author: shuai
 categories: [ STFT ]
-featured: true
+featured: false
 image: assets/images/8.jpg
 rating: 4.5
 ---

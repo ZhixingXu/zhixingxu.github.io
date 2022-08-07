@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  "数字音频均衡器的实现"
-author: john
+author: shuai
 categories: [ Jekyll, tutorial ]
 image: assets/images/3.jpg
 beforetoc: "what's this?"
 toc: true
+hidden: true
 ---
 
 comming
