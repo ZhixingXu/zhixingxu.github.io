@@ -28,7 +28,7 @@ comments: true
 <div class="sticky-top sticky-top-80">
 <h5>Buy me a coffee</h5>
 
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/Shuai-xv">My profile<i class="fab fa-github"></i></a>.</p>
+<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/ZhixingXu">My profile<i class="fab fa-github"></i></a>.</p>
 
 <p><img class="shadow-lg" src="{{site.baseurl}}/assets/images/pay.png" alt="Buy me a coffee" /></p>
 <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>

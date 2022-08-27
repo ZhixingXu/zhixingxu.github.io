@@ -100,7 +100,7 @@ au.audio_export(audio,'target.wav')
 
 over~
 
-我用pyqt5实现一个带gui的程序，[点此链接查看](https://github.com/Shuai-xv/img2audio.git)
+我用pyqt5实现一个带gui的程序，[点此链接查看](https://github.com/ZhixingXu/img2audio.git)
 
 敬请欣赏更多转换后的音频：
 
