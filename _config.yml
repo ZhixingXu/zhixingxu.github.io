@@ -5,7 +5,7 @@ description: "路漫漫其修远兮,吾将上下而求索"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
-absoluteurl: 'https://xuzx.github.io'
+absoluteurl: 'https://zhixingxu.github.io'
 # google_analytics: ''
 disqus: 'demowebsite'
 # mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
@@ -19,7 +19,7 @@ authors:
     display_name: 徐知行
     gravatar: eecc5347d489852f760c120cb1f3afb0
     email: 2087713004@qq.com
-    web: https://xuzx.github.io
+    web: https://zhixingxu.github.io
     description: "A just graduated worker."
 
 # Plugins
