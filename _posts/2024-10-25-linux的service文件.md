@@ -3,7 +3,7 @@ layout: post
 title:  "linux 配置和使用 service"
 author: shuai
 categories: [ linux,service ]
-image: assets/images/1648375125154.png
+image: assets/images/17.jpg
 ---
 
 今天在公司的云开发机上面把我们的一个 cpp 工程搭建了一个 websocket 服务.本地访问挺好的.通过 vscode 的端口转发在 mac 机器上也能正常访问.可是当我想让公司内网的其他同事访问该服务的时候却一直访问不通.公司的另一位同事说云开发机上搭建的服务是可以内网访问的,于是我只好找公司网络安全相关的同事咨询,费了一番功夫,最后终于发现,是由于我的程序里面监听的是`ws:://localhost:8080`,而实际应该把 localhost 换成机器的内网 ip 地址.挺简单的问题,在沟通过程中了解到 linux 的 service 相关的知识.
