@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "onnx 模型量化"
+title:  "stft/istft 导出 onnx/tensorrt 模型"
 author: shuai
 categories: [ onnx,onnxruntime ]
 image: assets/images/13.jpg
